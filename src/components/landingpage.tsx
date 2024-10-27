@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Link from 'next/link'
 import Image from 'next/image'
 import { Search, Settings, HandHelping, Plus, Cloud, CheckCircle, Users, Clock, Briefcase, X, Menu } from 'lucide-react'
 import CardGrid from './boxes'
@@ -31,9 +32,9 @@ export default function LandingPage() {
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex space-x-4">
             {navItems.map((item) => (
-              <a key={item.name} href={item.href} className="text-gray-50">
+              <Link key={item.name} href={item.href} className="text-gray-50">
                 {item.name}
-              </a>
+              </Link>
             ))}
           </nav>
 

@@ -1,8 +1,6 @@
+import React from 'react';
 import Image from 'next/image';
 
-
-import React from 'react'
-import { Cog, Zap, Plus, Cloud, Check, Users, Clock, Briefcase } from 'lucide-react'
 
 interface CardProps {
   icon: string;
